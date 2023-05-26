@@ -16,6 +16,9 @@
 		7118658C2A1516F300A2C57E /* GoodWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118658B2A1516F300A2C57E /* GoodWeatherTests.swift */; };
 		711865962A1516F300A2C57E /* GoodWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711865952A1516F300A2C57E /* GoodWeatherUITests.swift */; };
 		711865982A1516F300A2C57E /* GoodWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711865972A1516F300A2C57E /* GoodWeatherUITestsLaunchTests.swift */; };
+		711865A62A15177200A2C57E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711865A52A15177200A2C57E /* Weather.swift */; };
+		711865A92A1518A100A2C57E /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711865A82A1518A100A2C57E /* WeatherService.swift */; };
+		711865AC2A15203E00A2C57E /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711865AB2A15203E00A2C57E /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		711865912A1516F300A2C57E /* GoodWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		711865952A1516F300A2C57E /* GoodWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherUITests.swift; sourceTree = "<group>"; };
 		711865972A1516F300A2C57E /* GoodWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		711865A52A15177200A2C57E /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		711865A82A1518A100A2C57E /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		711865AB2A15203E00A2C57E /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		711865732A1516F100A2C57E /* GoodWeather */ = {
 			isa = PBXGroup;
 			children = (
+				711865AA2A15200600A2C57E /* View Models */,
+				711865A72A15188E00A2C57E /* Services */,
+				711865A42A15173000A2C57E /* Models */,
 				711865742A1516F100A2C57E /* GoodWeatherApp.swift */,
 				711865762A1516F100A2C57E /* Persistence.swift */,
 				7118657B2A1516F100A2C57E /* ContentView.swift */,
@@ -133,6 +142,30 @@
 				711865972A1516F300A2C57E /* GoodWeatherUITestsLaunchTests.swift */,
 			);
 			path = GoodWeatherUITests;
+			sourceTree = "<group>";
+		};
+		711865A42A15173000A2C57E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				711865A52A15177200A2C57E /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		711865A72A15188E00A2C57E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				711865A82A1518A100A2C57E /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		711865AA2A15200600A2C57E /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				711865AB2A15203E00A2C57E /* WeatherViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +301,10 @@
 				7118657A2A1516F100A2C57E /* GoodWeather.xcdatamodeld in Sources */,
 				711865752A1516F100A2C57E /* GoodWeatherApp.swift in Sources */,
 				7118657C2A1516F100A2C57E /* ContentView.swift in Sources */,
+				711865AC2A15203E00A2C57E /* WeatherViewModel.swift in Sources */,
 				711865772A1516F100A2C57E /* Persistence.swift in Sources */,
+				711865A92A1518A100A2C57E /* WeatherService.swift in Sources */,
+				711865A62A15177200A2C57E /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
